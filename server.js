@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
         next();
       });
 
-
+app.use('/', productRoutes);
 app.use('/api/product', productRoutes);
 
 app.listen(port, () => {
